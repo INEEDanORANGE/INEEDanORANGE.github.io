@@ -5,18 +5,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>朋友圈</title>
     <style>
         body {
             margin: 0;
             padding: 0;
+            background-color: #F0F0F0;
         }
 
         .container {
             width: 500px;
-            height: 100%;
             margin: 0 auto;
-            border: 1px solid #C4C4C4;
+            /* border: 1px solid #FFFFFF; */
+            background-color: #FFFFFF;
         }
 
         .head {
@@ -24,7 +25,10 @@
         }
 
         .head p {
-            margin-left: 360px;
+            color: #fffeff;
+            font-size: 18px;
+            font-weight: 700;
+            margin-left: 320px;
             margin-bottom: -40px;
         }
 
@@ -32,29 +36,43 @@
             border-radius: 10px;
             margin-left: 400px;
         }
-
+        
         .news {
-            margin: 40px 10px;
-            border-bottom: 1px solid #C4C4C4;
+            margin: 40px 0;
+            border-bottom: 1px solid #e4e4e4;
+        }
+
+        .pic {
+            margin-left: 20px;
+        }
+
+        .news:last-child {
+            border-bottom: none;
         }
 
         .info {
             width: 350px;
             margin-left: 100px;
-            margin-top: -90px;
+            margin-top: -80px;
         }
 
         .info p:first-child {
-            color: #2F5DF2;
+            font-size: 18px;
+            color: #606a8e;
+            font-weight: 800;
         }
 
         .radius {
-            width: 40px;
-            height: 10px;
-            border-radius: 5px;
-            background-color: #C4C4C4;
-            margin-top: -30px;
+            width: 46px;
+            height: 26px;
+            border-radius: 10px;
+            background-color: #F0F0F0;
+            margin-top: -32px;
             margin-left: 320px;
+        }
+
+        .radius img:first-child {
+            margin-left: 13px;
         }
 
         .time {
@@ -62,56 +80,51 @@
         }
 
         .time p {
-            font-size: 12px;
-            color: #333333;
-        }
-
-        .first {
-            width: 10px;
-            height: 10px;
-            background-color: #333333;
-            border-radius: 50%;
-            margin-left: 5px;
-        }
-
-        .second {
-            width: 10px;
-            height: 10px;
-            background-color: #333333;
-            border-radius: 50%;
-            margin-left: 25px;
-            margin-top: -10px;
+            font-size: 14px;
+            color: #b2b2b2;
         }
 
         .comment {
-            width: 360px;
-            background-color: #C4C4C4;
+            width: 364px;
+            background-color: #f7f7f7;
             margin-left: 100px;
             margin-top: 20px;
-            border-radius: 5px;
+            border-radius: 10px;
         }
 
         .like {
-            border-bottom: 1px solid #787878;
+            border-bottom: 1px solid #e3e3e3;
             line-height: 40px;
         }
 
         .like span {
-
+            font-size: 14px;
+            color: #62648a;
             padding: 0 6px;
+        }
+
+        .like img {
+            margin-left: 12px;
         }
 
         .reply {
             line-height: 40px;
-            margin-bottom: 20px
+            margin-bottom: 40px;
+        }
+
+        .reply p {
+            margin: 0;
+            font-size: 14px;
         }
 
         .reply span {
-            color: #2F5DF2;
+            color: #62648a;
             padding: 0 0 0 6px;
+            font-size: 16px;
         }
-        td{
-            padding: 0 20px;
+
+        td {
+            padding: 0 10px;
         }
     </style>
 </head>
@@ -119,80 +132,71 @@
 <body>
     <div class="container">
         <div class="top">
-            <img src="images/image 2.png" width="500px">
+            <img src="http://nocturne.bczcdn.com/img/1654583569045_32863/bac.png" width="500">
             <div class="head">
-                <p>小夜</p>
-                <img src="images/img2.png">
+                <p>小夜Algo</p>
+                <img src="http://nocturne.bczcdn.com/audio/1653276086627_88993/wecom-temp-91c933c365d4059a83cbf9428b93b6d8.png" width="80">
             </div>
         </div>
-        <div class="main">
+        <div>
             <div class="news">
-                <img src="images/img2.png">
+                <div class="pic">
+                    <img src="http://nocturne.bczcdn.com/audio/1653276086627_88993/wecom-temp-91c933c365d4059a83cbf9428b93b6d8.png" width="60">
+                </div>
                 <div class="info">
-                    <p>小夜</p>
-                    <p>今天发布一条朋友圈，我get到一门新的技术。</p>
-                    <div><img src="images/img1.png"></div>
+                    <p>小夜Algo</p>
+                    <p>今天发布一条朋友圈<br>我get到一门新的技术。</p>
+                    <img src="https://ali.bczcdn.com/nocturne/static/img/1.ff709983.png" width="360">
                 </div>
                 <div class="time">
-                    <p>一分钟以前</p>
+                    <p>1分钟前</p>
                     <div class="radius">
-                        <div class="first"></div>
-                        <div class="second"></div>
+                        <img src="http://nocturne.bczcdn.com/file/1651820060499_27482/yuan.png" width="8">
+                        <img src="http://nocturne.bczcdn.com/file/1651820060499_27482/yuan.png" width="8">
                     </div>
                 </div>
                 <div class="comment">
                     <div class="like">
-                        <span>点赞：小明</span>
+                        <img src="http://nocturne.bczcdn.com/file/1651820012076_33293/heart.png" width="10"><span>小黄Buggy</span>
                     </div>
                     <div class="reply">
-                        <span>小明：</span>在哪里学的，我也要学
+                        <p><span>小黄Buggy：</span>在哪里学的，我也要学</p>
                     </div>
                 </div>
             </div>
             <div class="news">
-                <img src="images/img3.png">
+                <div class="pic">
+                    <img src="http://nocturne.bczcdn.com/audio/1653276431191_47153/664821653276122_.pic.jpg" width="60">
+                </div>
                 <div class="info">
-                    <p>小明</p>
+                    <p>佩拉Perla</p>
                     <p>分享我的化妆品</p>
-                    <table class="table" width="200" height="200px">
+                    <table class="table">
                         <tbody>
                             <tr>
-                                <td><img src="images/img2.png">
+                                <td><img src="http://nocturne.bczcdn.com/file/1651820098066_612/img3.png">
                                 </td>
-                                <td><img src="images/img3.png">
+                                <td><img src="http://nocturne.bczcdn.com/file/1651820126392_69055/img4.png">
                                 </td>
-                                <td><img src="images/img4.png">
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><img src="images/img3.png">
-                                </td>
-                                <td><img src="images/img4.png">
-                                </td>
-                                <td><img src="images/img2.png">
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><img src="images/img4.png">
-                                </td>
-                                <td><img src="images/img3.png">
-                                </td>
-                                <td><img src="images/img2.png">
+                                <td><img src="http://nocturne.bczcdn.com/file/1651820139639_48522/img5.png">
                                 </td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
                 <div class="time">
-                    <p>一小时以前</p>
+                    <p>8分钟前</p>
                     <div class="radius">
-                        <div class="first"></div>
-                        <div class="second"></div>
+                        <img src="http://nocturne.bczcdn.com/file/1651820060499_27482/yuan.png" width="8">
+                        <img src="http://nocturne.bczcdn.com/file/1651820060499_27482/yuan.png" width="8">
                     </div>
                 </div>
                 <div class="comment">
+                    <div class="like">
+                        <img src="http://nocturne.bczcdn.com/file/1651820012076_33293/heart.png" width="10"><span>小夜Algo</span>
+                    </div>
                     <div class="reply">
-                        <span>小夜：</span>收藏了
+                        <p><span>小夜Algo：</span>收藏了</p>
                     </div>
                 </div>
             </div>
