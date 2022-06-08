@@ -1,16 +1,203 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>朋友圈</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 500px;
+            height: 100%;
+            margin: 0 auto;
+            border: 1px solid #C4C4C4;
+        }
+
+        .head {
+            margin-top: -50px;
+        }
+
+        .head p {
+            margin-left: 360px;
+            margin-bottom: -40px;
+        }
+
+        .head img {
+            border-radius: 10px;
+            margin-left: 400px;
+        }
+
+        .news {
+            margin: 40px 10px;
+            border-bottom: 1px solid #C4C4C4;
+        }
+
+        .info {
+            width: 350px;
+            margin-left: 100px;
+            margin-top: -90px;
+        }
+
+        .info p:first-child {
+            color: #2F5DF2;
+        }
+
+        .radius {
+            width: 40px;
+            height: 10px;
+            border-radius: 5px;
+            background-color: #C4C4C4;
+            margin-top: -30px;
+            margin-left: 320px;
+        }
+
+        .time {
+            margin-left: 100px;
+        }
+
+        .time p {
+            font-size: 12px;
+            color: #333333;
+        }
+
+        .first {
+            width: 10px;
+            height: 10px;
+            background-color: #333333;
+            border-radius: 50%;
+            margin-left: 5px;
+        }
+
+        .second {
+            width: 10px;
+            height: 10px;
+            background-color: #333333;
+            border-radius: 50%;
+            margin-left: 25px;
+            margin-top: -10px;
+        }
+
+        .comment {
+            width: 360px;
+            background-color: #C4C4C4;
+            margin-left: 100px;
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+
+        .like {
+            border-bottom: 1px solid #787878;
+            line-height: 40px;
+        }
+
+        .like span {
+
+            padding: 0 6px;
+        }
+
+        .reply {
+            line-height: 40px;
+            margin-bottom: 20px
+        }
+
+        .reply span {
+            color: #2F5DF2;
+            padding: 0 0 0 6px;
+        }
+        td{
+            padding: 0 20px;
+        }
+    </style>
 </head>
+
 <body>
-    <!-- 朋友圈整体 -->
     <div class="container">
-        <!-- 上半部分 -->
-        <div class="top">1234</div>
-        <!-- 下半部分 -->
-        <div class="bottom">1234</div>
+        <div class="top">
+            <img src="images/image 2.png" width="500px">
+            <div class="head">
+                <p>小夜</p>
+                <img src="images/img2.png">
+            </div>
+        </div>
+        <div class="main">
+            <div class="news">
+                <img src="images/img2.png">
+                <div class="info">
+                    <p>小夜</p>
+                    <p>今天发布一条朋友圈，我get到一门新的技术。</p>
+                    <div><img src="images/img1.png"></div>
+                </div>
+                <div class="time">
+                    <p>一分钟以前</p>
+                    <div class="radius">
+                        <div class="first"></div>
+                        <div class="second"></div>
+                    </div>
+                </div>
+                <div class="comment">
+                    <div class="like">
+                        <span>点赞：小明</span>
+                    </div>
+                    <div class="reply">
+                        <span>小明：</span>在哪里学的，我也要学
+                    </div>
+                </div>
+            </div>
+            <div class="news">
+                <img src="images/img3.png">
+                <div class="info">
+                    <p>小明</p>
+                    <p>分享我的化妆品</p>
+                    <table class="table" width="200" height="200px">
+                        <tbody>
+                            <tr>
+                                <td><img src="images/img2.png">
+                                </td>
+                                <td><img src="images/img3.png">
+                                </td>
+                                <td><img src="images/img4.png">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><img src="images/img3.png">
+                                </td>
+                                <td><img src="images/img4.png">
+                                </td>
+                                <td><img src="images/img2.png">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><img src="images/img4.png">
+                                </td>
+                                <td><img src="images/img3.png">
+                                </td>
+                                <td><img src="images/img2.png">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="time">
+                    <p>一小时以前</p>
+                    <div class="radius">
+                        <div class="first"></div>
+                        <div class="second"></div>
+                    </div>
+                </div>
+                <div class="comment">
+                    <div class="reply">
+                        <span>小夜：</span>收藏了
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
+
 </html>
